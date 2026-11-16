@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THRILLWAVE | Adventure Awaits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <h2 class="logo">THRILL<span>WAVE</span> 🎢</h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#rides">Attractions</a>
+            <a href="#about">About</a>
+        </div>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <p class="tagline">✨ THE ULTIMATE ADVENTURE DESTINATION ✨</p>
+            <h1>LET THE <span>THRILL</span> BEGIN!</h1>
+            <p>Experience endless excitement with breathtaking rides,
+            amazing water slides and unforgettable adventures.</p>
+            <a href="#rides" class="hero-btn">EXPLORE THE PARK ↓</a>
+        </div>
+    </header>
+
+    <section class="rides-section" id="rides">
+        <p class="section-tag">DISCOVER THE FUN</p>
+        <h2>Explore Our <span>Attractions</span></h2>
+        <p class="section-description">
+            From heart-racing rides to refreshing water adventures!
+        </p>
+
+        <div class="ride-container">
+
+            <div class="ride-card">
+                <div class="ride-icon">🎢</div>
+                <h3>Roller Coaster</h3>
+                <p>Feel the adrenaline rush with our ultimate thrilling ride.</p>
+                <button onclick="showRide('Roller Coaster')">Explore Ride</button>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-icon">🌊</div>
+                <h3>Wave Pool</h3>
+                <p>Enjoy ocean-like waves and splash into unlimited fun.</p>
+                <button onclick="showRide('Wave Pool')">Explore Ride</button>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-icon">🛝</div>
+                <h3>Water Slides</h3>
+                <p>Slide through exciting twists, turns and refreshing splashes.</p>
+                <button onclick="showRide('Water Slides')">Explore Ride</button>
+            </div>
+
+            <div class="ride-card">
+                <div class="ride-icon">🎡</div>
+                <h3>Giant Wheel</h3>
+                <p>Enjoy beautiful views from high above the park.</p>
+                <button onclick="showRide('Giant Wheel')">Explore Ride</button>
+            </div>
+
+        </div>
+
+        <div class="result-box" id="result">
+            Select an attraction to discover more!
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>MORE FUN. MORE <span>MEMORIES.</span></h2>
+        <p>THRILLWAVE is where excitement meets adventure.
+        Make every moment unforgettable!</p>
+    </section>
+
+    <footer>
+        © 2026 THRILLWAVE | Adventure Never Ends 💜
+    </footer>
+
+    <script type="module" src="main.js"></script>
+
+</body>
+</html>

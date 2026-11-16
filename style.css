@@ -1,0 +1,218 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #090b20;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #10132c;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #32e6f2;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff68c5;
+}
+
+.hero {
+    min-height: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #25106b, #102c79, #087c9c);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.tagline, .section-tag {
+    color: #48eaf3;
+    letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 7vw, 75px);
+    margin: 20px 0;
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #ff70c8;
+}
+
+.hero-content > p:not(.tagline) {
+    color: #e1e4ff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #ff5fbd, #8d65ff);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px #ff5fbd66;
+}
+
+.rides-section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.rides-section h2 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.rides-section h2 span, .about span {
+    color: #ff70c8;
+}
+
+.section-description {
+    color: #b9c0df;
+    margin-bottom: 40px;
+}
+
+.ride-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.ride-card {
+    background: linear-gradient(145deg, #191d42, #222657);
+    border: 1px solid #444b82;
+    border-radius: 20px;
+    padding: 30px 22px;
+    transition: 0.3s;
+}
+
+.ride-card:hover {
+    transform: translateY(-10px);
+    border-color: #ff70c8;
+    box-shadow: 0 12px 30px #a34cff33;
+}
+
+.ride-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.ride-card h3 {
+    color: #52e9f2;
+    margin-bottom: 12px;
+}
+
+.ride-card p {
+    color: #c4c8e5;
+    font-size: 13px;
+    line-height: 1.8;
+    min-height: 70px;
+}
+
+.ride-card button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: 11px 22px;
+    color: white;
+    background: linear-gradient(90deg, #f34eb6, #7959ff);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.ride-card button:hover {
+    opacity: 0.8;
+}
+
+.result-box {
+    margin: 35px auto 0;
+    max-width: 600px;
+    padding: 20px;
+    background: #171b3d;
+    border: 1px solid #4a4e88;
+    border-radius: 15px;
+    color: #54e9f2;
+}
+
+.about {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(120deg, #25106b, #173d80);
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    color: #e1e4ff;
+    line-height: 1.8;
+}
+
+footer {
+    background: #07091a;
+    text-align: center;
+    padding: 22px;
+    color: #aeb4d8;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 0 8px;
+    }
+
+    .rides-section h2 {
+        font-size: 29px;
+    }
+}
